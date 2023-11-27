@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Page</title>
+    <style>
+        body {
+            text-align: center;
+            background-image: url('C:\reddrose\flower2.jpeg'); /* Replace 'background_image.jpg' with your image file */
+            background-size: cover;
+            background-position: center;
+            color: Red color; /* Set text color to contrast with the background */
+        }
+
+        #birthdayMessage {
+            display: none;
+            margin-top:20px; /* Add some space between the link and the message */    
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the link to reveal the surprise!</h1>
+    <a href="#" id="birthdayLink">Click me!</a>
+
+    <div id="birthdayMessage">
+        <img src="C:\reddrose\flower2.jpeg" alt="Happy Birthday">
+        <p>Happy Birthday MEGHA SREE! 🌹</p>
+    </div>
+
+    <script>
+        document.getElementById('birthdayLink').addEventListener('click', function() {
+            document.getElementById('birthdayMessage').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
